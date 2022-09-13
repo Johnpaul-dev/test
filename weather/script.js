@@ -21,7 +21,7 @@ const onSuccess = (position) => {
     latitude = position.coords.latitude;
     longitude = position.coords.latitude;
 
-    weather();
+    setTimeout(weather(), 40000);
 }
 
 const onError = () => {
