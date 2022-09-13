@@ -10,6 +10,7 @@ const weather = () => {
     .then(data => 
           console.log(data)
         )
+    console.log(latitude, longitude)
 } 
 
 const getLocation = () => {
