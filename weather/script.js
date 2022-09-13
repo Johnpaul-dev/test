@@ -10,6 +10,7 @@ const weather = () => {
     .then(data => 
           console.log(data)
         )
+    console.log("me")
 } 
 
 const getLocation = () => {
@@ -21,7 +22,7 @@ const onSuccess = (position) => {
     latitude = position.coords.latitude;
     longitude = position.coords.latitude;
 
-    setTimeout(weather(), 40000);
+    weather()
 }
 
 const onError = () => {
