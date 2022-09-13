@@ -1,4 +1,4 @@
-const state = document.getElementById("header");
+const stated = document.getElementById("header");
 let latitude = "";
 let longitude = "";
 
@@ -8,7 +8,7 @@ const weather = () => {
     fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=5&appid=f24baf01aff33594366c6279cff93512`)
     .then(res => res.json())
     .then(data => 
-        state.textContent = data[0].state
+          console.log(data)
         )
 } 
 
