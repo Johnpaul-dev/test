@@ -8,7 +8,7 @@ const weather = () => {
    fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&appid=f24baf01aff33594366c6279cff93512`)
     .then(res => res.json())
     .then(data => 
-          console.log(data.sys.country)
+          console.log(data)
         )
     console.log(latitude, longitude)
 } 
