@@ -20,7 +20,7 @@ const getLocation = () => {
 const onSuccess = (position) => {
     // console.log(position.coords);
     latitude = position.coords.latitude;
-    longitude = position.coords.latitude;
+    longitude = position.coords.longitude;
     weather()
 }
 
